@@ -18,7 +18,7 @@ namespace IDS
     {
         int ksyn = 0;
         public int seconds = 1000;
-        public int amount = 500;
+        public int amount = 5000;
         public void SYNFloodDetector(NdisApi filter, WaitHandle[] waitHandles, IReadOnlyList<NetworkAdapter> networkAdapters, IReadOnlyList<ManualResetEvent> waitHandlesManualResetEvents)
         {
             var ndisApiHelper = new NdisApiHelper();
