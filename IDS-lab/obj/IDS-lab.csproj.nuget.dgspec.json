@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\IDS-lab\\IDS-lab\\IDS-lab.csproj": {}
+    "D:\\всякое\\4 Курс\\2 сем\\ТПЗВИ\\Полковник\\Лаб3\\IDS\\IDS-lab\\IDS-lab.csproj": {}
   },
   "projects": {
-    "E:\\IDS-lab\\IDS-lab\\IDS-lab.csproj": {
+    "D:\\всякое\\4 Курс\\2 сем\\ТПЗВИ\\Полковник\\Лаб3\\IDS\\IDS-lab\\IDS-lab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\IDS-lab\\IDS-lab\\IDS-lab.csproj",
+        "projectUniqueName": "D:\\всякое\\4 Курс\\2 сем\\ТПЗВИ\\Полковник\\Лаб3\\IDS\\IDS-lab\\IDS-lab.csproj",
         "projectName": "IDS-lab",
-        "projectPath": "E:\\IDS-lab\\IDS-lab\\IDS-lab.csproj",
-        "packagesPath": "C:\\Users\\rushu\\.nuget\\packages\\",
-        "outputPath": "E:\\IDS-lab\\IDS-lab\\obj\\",
+        "projectPath": "D:\\всякое\\4 Курс\\2 сем\\ТПЗВИ\\Полковник\\Лаб3\\IDS\\IDS-lab\\IDS-lab.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\всякое\\4 Курс\\2 сем\\ТПЗВИ\\Полковник\\Лаб3\\IDS\\IDS-lab\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rushu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +29,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +41,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -47,18 +52,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -51,13 +51,6 @@ namespace IDS
                                     }
                                 }
                             }
-                            // Обнаружение флага SYN в TCP пакете
-                            //string hostName = Dns.GetHostName();
-                            // string myIP = "192.168.31.173";//Dns.GetHostByName(hostName).AddressList[0].ToString();
-                            //IPAddress address = IPAddress.Parse(myIP);
-                            //Console.WriteLine($"\r\naddress: {address}");
-                            //Console.WriteLine($"\r\niPv4Packet: {iPv4Packet.DestinationAddress}");
-                            if (tcpPacket.Syn) //&& iPv4Packet.DestinationAddress == address)
                             {
                                 ksyn += 1;
                                 Console.WriteLine($"\r\n{iPv4Packet.SourceAddress}:{tcpPacket.SourcePort} -> {iPv4Packet.DestinationAddress}:{tcpPacket.DestinationPort} | Флаг: SYN");
@@ -89,4 +82,3 @@ namespace IDS
         }
     }
 }
-//перед началом цикла у нас запускается таймер
