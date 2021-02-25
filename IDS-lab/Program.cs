@@ -51,7 +51,7 @@ namespace IDS
             {
                 IDS ids = new IDS();
                 Console.Write("Choose the mode:");
-                Console.WriteLine("\n1. Default mode. Packet limited at 500 per 1 second" +
+                Console.WriteLine("\n1. Default mode. Packet limited at 5000 per 1 second" +
                                   "\n2. Custom mode.");
                 var mode = int.Parse(Console.ReadLine());
 
@@ -59,7 +59,7 @@ namespace IDS
                 {
 
                    ids.seconds = 1000;
-                   ids.amount = 500;
+                   ids.amount = 5000;
                     var t1 = Task.Factory.StartNew(() => ids.SYNFloodDetector(filter, waitHandles, tcpAdapters.ToArray(), waitHandlesManualResetEvents));
                     Task.WaitAll(t1);
                     Console.Read();

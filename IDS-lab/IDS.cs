@@ -10,7 +10,7 @@ using System.Timers;
 namespace IDS
 {
     /// <summary>
-    /// After analyzing the SYN-attacks, it was revealed that the number of requests would exceed 500. 
+    /// After analyzing the SYN-attacks, it was revealed that the number of requests would exceed 5000. 
     /// To detect the SYN-attack, it was decided to use a timer and estimate the number of packets in 1 second.
     /// This program will close connection when attack detect.
     /// </summary>
