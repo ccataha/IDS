@@ -57,7 +57,7 @@ namespace IDS
                             }
                             {
                                 ksyn += 1;
-                                Console.WriteLine($"\r\n{iPv4Packet.SourceAddress}:{tcpPacket.SourcePort} -> {iPv4Packet.DestinationAddress}:{tcpPacket.DestinationPort} | Флаг: SYN");
+                                Console.WriteLine($"\r\n{iPv4Packet.SourceAddress}:{tcpPacket.SourcePort} -> {iPv4Packet.DestinationAddress}:{tcpPacket.DestinationPort} | Flag: SYN");
                                 // amount is the number of packets that will be recognized as an attack.
                                 if (ksyn > amount)
                                 {
