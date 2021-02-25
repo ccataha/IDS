@@ -16,3 +16,21 @@ E:\IDS-lab\IDS-lab\obj\Debug\netcoreapp3.1\IDS-lab.csproj.CopyComplete
 E:\IDS-lab\IDS-lab\obj\Debug\netcoreapp3.1\IDS-lab.dll
 E:\IDS-lab\IDS-lab\obj\Debug\netcoreapp3.1\IDS-lab.pdb
 E:\IDS-lab\IDS-lab\obj\Debug\netcoreapp3.1\IDS-lab.genruntimeconfig.cache
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\bin\Debug\netcoreapp3.1\IDS-lab.exe
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\bin\Debug\netcoreapp3.1\ndisapi.dll
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\bin\Debug\netcoreapp3.1\IDS-lab.deps.json
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\bin\Debug\netcoreapp3.1\IDS-lab.runtimeconfig.json
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\bin\Debug\netcoreapp3.1\IDS-lab.runtimeconfig.dev.json
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\bin\Debug\netcoreapp3.1\IDS-lab.dll
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\bin\Debug\netcoreapp3.1\IDS-lab.pdb
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\bin\Debug\netcoreapp3.1\NdisApiDotNet.dll
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\bin\Debug\netcoreapp3.1\NdisApiDotNetPacketDotNet.dll
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\bin\Debug\netcoreapp3.1\PacketDotNet.dll
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\obj\Debug\netcoreapp3.1\IDS-lab.csprojAssemblyReference.cache
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\obj\Debug\netcoreapp3.1\IDS-lab.AssemblyInfoInputs.cache
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\obj\Debug\netcoreapp3.1\IDS-lab.AssemblyInfo.cs
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\obj\Debug\netcoreapp3.1\IDS-lab.csproj.CoreCompileInputs.cache
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\obj\Debug\netcoreapp3.1\IDS-lab.csproj.CopyComplete
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\obj\Debug\netcoreapp3.1\IDS-lab.dll
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\obj\Debug\netcoreapp3.1\IDS-lab.pdb
+D:\всякое\4 Курс\2 сем\ТПЗВИ\Полковник\Лаб3\IDS\IDS-lab\obj\Debug\netcoreapp3.1\IDS-lab.genruntimeconfig.cache

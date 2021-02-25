@@ -9,16 +9,22 @@ using System.Threading;
 using System.Timers;
 namespace IDS
 {
+    /// <summary>
+    /// After analyzing the SYN-attacks, it was revealed that the number of requests would exceed 500. 
+    /// To detect the SYN-attack, it was decided to use a timer and estimate the number of packets in 1 second.
+    /// </summary>
     public class IDS
     {
         int ksyn = 0;
+        int seconds = 1000;
+        int amount = 500;
         public void SYNFloodDetector(NdisApi filter, WaitHandle[] waitHandles, IReadOnlyList<NetworkAdapter> networkAdapters, IReadOnlyList<ManualResetEvent> waitHandlesManualResetEvents)
         {
             var ndisApiHelper = new NdisApiHelper();
             var ethRequest = ndisApiHelper.CreateEthRequest();
-            System.Timers.Timer aTimer = new System.Timers.Timer(); //Создаем таймер
-            aTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent); //добавляем событие под конец таймера
-            aTimer.Interval = 1000;//1 sec
+            System.Timers.Timer aTimer = new System.Timers.Timer(); //Timer method
+            aTimer.Elapsed += new ElapsedEventHandler(Status); //Call status method when timer reloading
+            aTimer.Interval = seconds;//1000 ms is 1 sec
             aTimer.Enabled = true;
             int n = 1;
 
@@ -34,17 +40,15 @@ namespace IDS
                     {
                         if (iPv4Packet.PayloadPacket is TcpPacket tcpPacket)
                         {
-                            // Протокол HTTP
                             if ((tcpPacket.DestinationPort == 80)
                             || (tcpPacket.SourcePort == 80))
                             {
-                                // Считывание данных TCP пакета. Получение HTTP пакета
+                                // Receive TCP packet. Perception the HHTP markers.
                                 string httpPacket = Encoding.UTF8.GetString(tcpPacket.PayloadData);
                                 if ((httpPacket != "") && (httpPacket != "\0"))
                                 {
                                     string[] headersHttp = httpPacket.Split(new string[1] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
                                     string context = "search";
-                                    // Поиск слова в строке url
                                     if (headersHttp[0].IndexOf(context) > -1)
                                     {
                                         Console.WriteLine($"\r\n{iPv4Packet.SourceAddress}:{tcpPacket.SourcePort} -> {iPv4Packet.DestinationAddress}:{tcpPacket.DestinationPort} | HTTP: {context}");
@@ -54,31 +58,25 @@ namespace IDS
                             {
                                 ksyn += 1;
                                 Console.WriteLine($"\r\n{iPv4Packet.SourceAddress}:{tcpPacket.SourcePort} -> {iPv4Packet.DestinationAddress}:{tcpPacket.DestinationPort} | Флаг: SYN");
-                                if (ksyn > 500)
+                                if (ksyn > amount) // amount is the number of packets that will be recognized as an attack.
                                 {
-                                    Console.WriteLine($"{ksyn} пакетов");
-                                    Console.WriteLine("ПИЗДЕЦ ХУЙНЯ АЛЕ");
+                                    Console.WriteLine($"{ksyn} packets");
+                                    Console.WriteLine("SYN-flood attack detected");
                                     n = 0;
                                     aTimer.Enabled = false;
                                 }
-                                //if (tcpPacket.Ack == true)
-                                //{
-                                //    Console.WriteLine($"\r\nAck присутствует");
-                                //}
                             }
                         }
                     }
-                    //Отправка пакетов дальше
                     filter.SendPacket(ref ethRequest);
                 }
                 waitHandlesManualResetEvents[handle].Reset();
             }
         }
-        public void OnTimedEvent(object source, ElapsedEventArgs e)
+        public void Status(object source, ElapsedEventArgs e)
         {
-            Console.WriteLine($"{ksyn} пакетов");
+            Console.WriteLine($"{ksyn} packets");
             ksyn = 0;
-            Console.WriteLine("Таймер закончился! Перезапускаем...");
         }
     }
 }
