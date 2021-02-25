@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>IDS_lab</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="NdisApiDotNet">
+      <HintPath>NdisApiDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="NdisApiDotNetPacketDotNet">
+      <HintPath>NdisApiDotNetPacketDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="PacketDotNet">
+      <HintPath>PacketDotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ndisapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDS-lab", "IDS-lab\IDS-lab.csproj", "{BF727904-EF25-4184-B761-11C45045C4E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7AAE0256-E07E-4EA9-B927-777D60C6500D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF727904-EF25-4184-B761-11C45045C4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF727904-EF25-4184-B761-11C45045C4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF727904-EF25-4184-B761-11C45045C4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF727904-EF25-4184-B761-11C45045C4E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C10234DE-6EB4-4633-863A-9F40BBD04D84}
+	EndGlobalSection
+EndGlobal
